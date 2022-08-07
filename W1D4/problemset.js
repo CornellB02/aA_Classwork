@@ -20,18 +20,18 @@
 //     return upperWord+','+upperWord+','+words
 // }
 
-function capWords(words) { /// 
-  let newWords = [];/// declare  newWords its own empthy array 
+// function capWords(words) { /// 
+//   let newWords = [];/// declare  newWords its own empthy array 
 
-  for (var i = 0; i < words.length; i++) { // for loop is doing its own thing 
-    let word = words[i]; /// word is now the index od words
-    let cappedWord = word.toUpperCase(); /// cappedWord is now the uppercased 
-    newWords.push(cappedWord);
-  }
-  return newWords;
-}
+//   for (var i = 0; i < words.length; i++) { // for loop is doing its own thing 
+//     let word = words[i]; /// word is now the index od words
+//     let cappedWord = word.toUpperCase(); /// cappedWord is now the uppercased 
+//     newWords.push(cappedWord);
+//   }
+//   return newWords;
+// }
 
-console.log(capWords(['hello', 'boOtCaMp', 'PREP!']))
+// console.log(capWords(['hello', 'boOtCaMp', 'PREP!']))
 
 
 
@@ -102,11 +102,19 @@ console.log(capWords(['hello', 'boOtCaMp', 'PREP!']))
 
 
 // function wordPeriods(sentence) {
-//     let ele = sentence
-//     for (let i = 0; i < sentence.length; i++) {
+//     let words = sentence.split(' ')
+//     let newWords = []
+    
+//     // let Sen = sentence()
+//     for (let i = 0; i < words.length; i++) {
+//         word = words[i]
+        
+//         ele = word + '.'
+//         newWords.push(ele)
 
 //     }
-//     return sentence 
+//     let newSen = newWords.join(' ');
+//     return newWords 
 // }
 
 // console.log(wordPeriods('hello world')); // => 'hello. world.'
@@ -135,3 +143,25 @@ console.log(capWords(['hello', 'boOtCaMp', 'PREP!']))
 // printBackwards(names);
 
 
+// Write a function `maxValue(array)` that returns the largest value in `array`.
+// Assume `array` is an array of numbers.
+//
+// Examples:
+//
+// maxValue([12, 6, 43, 2]); // => 43
+// maxValue([]); // => null
+
+
+function maxValue(array) {
+    let max = 0
+    for (let i = 0; i < array.length; i++){
+        let num = array[i]
+        if (num > max || max === null){
+            max = num;
+        }
+    }
+    return max
+    
+}
+
+console.log(maxValue([-4, -10, 0.43])); // => 0.43
