@@ -119,22 +119,22 @@
 // // Examples:
 // console.log(echo("Mom!")); // => "MOM! ... Mom! ... mom!"
 // console.log(echo("hey")); // => "HEY ... hey ... hey"
-// console.log(echo("JUMp")); // => "JUMP ... JUMp ... jump"
+console.log(echo("JUMp")); // => "JUMP ... JUMp ... jump"
 // //
-// function echo(string) {
+function echo(string) {
 
-// let upperWord = string.toUpperCase();
-// let lowWord = string.toLowerCase();
+let upperWord = string.toUpperCase();
+let lowWord = string.toLowerCase();
 
-// return upperWord+'...'+string+'...'+lowWord
-// }
-
-function printRange(start,end) {
-   for (let i = start; i<= end; i++)
-   {console.log(i)}
+return upperWord+'...'+string+'...'+lowWord
 }
 
-printRange(1,10)
+// function printRange(start,end) {
+//    for (let i = start; i<= end; i++)
+//    {console.log(i)}
+// }
+
+// printRange(1,10)
 
 
 // function PrintChars(sentence) {

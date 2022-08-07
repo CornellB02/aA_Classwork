@@ -19,7 +19,7 @@ console.log(names)
 console.log(names[0])
 
 console.log(names.length)
-
+ 
 console.log(names.push('Jizza'))
 
 console.log(names)
