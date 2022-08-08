@@ -69,13 +69,58 @@
 // Example:
 //
 
-function capWords(words) { 
-    let arr = []
-    let word = words[i]
-    for(let i = 0; i <= word.length; i++) {
-        let uppWord = word.toUpperCase();
-        arr.push(word(uppWord))
+// function capWords(words) { 
+//     let arr = []
+//     let word = words['i']
+//     for(let i = 0; i <= word.length; i++) {
+//         let uppWord = word.toUpperCase();
+//         arr.push(word(uppWord))
+//     }
+//     return arr
+// }
+// console.log(capWords(['hello', 'boOtCaMp', 'PREP!'])); // => ['HELLO', 'BOOTCAMP', 'PREP!']
+
+
+
+// Write a function `myIndexOf(array, target)` that takes in an array of
+// numbers and a target number as arguments. It should return the index value
+// of the target if it is present in the array or -1 if it is not present.
+//
+// CONSTRAINT: Do not use the indexOf method.
+//
+// Examples:
+//
+// myIndexOf([1,2,3,4],4) => 3
+// myIndexOf([5,6,7,8],2) => -1
+
+// function myIndexOf(array, target) {
+   
+//     // arr = []
+//     for (i = 0; i <= array.length; i++){
+       
+//     let num = array[i]
+//     // let num2 = taget[i]
+
+//     // num.myIndexOf(num2)
+//     // arr.push(num2)
+//     }
+//     return arr
+// }
+
+
+
+function myIndexOf(array, target) {
+    
+    for (var i = 0; i < array.length; i++) {
+        var num = array[i];
+        
+        if (num === target) {
+            return i;
+        }
     }
-    return arr
-}
-console.log(capWords(['hello', 'boOtCaMp', 'PREP!'])); // => ['HELLO', 'BOOTCAMP', 'PREP!']
+    
+      return -1;
+    }
+    
+    
+    console.log(myIndexOf([5,6,7,8],2))

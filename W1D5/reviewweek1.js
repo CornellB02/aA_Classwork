@@ -139,20 +139,158 @@
 // arraySubstring(["prefix", "problems", "pragmatic", "prefer"], "pre")
 // => [true, false, false, true]
 
-function arraySubstring(word, str) {
-    let arr = [];
+// function arraySubstring(word, str) {
+//     let arr = [];
 
-    for (let i = 0; i < word.length; i++) {
-        let num = word[i];
+//     for (let i = 0; i < word.length; i++) {
+//         let num = word[i];
 
-        if (num.indexOf(str) !== -1) {
-        arr.push(true);
-    } else {
-        arr.push(false);
-    }
+//         if (num.indexOf(str) !== -1) {
+//         arr.push(true);
+//     } else {
+//         arr.push(false);
+//     }
+// }
+//     return arr
+// }
+
+
+// console.log(arraySubstring(["hello", "history", "helix", "hellos"],"hel"))
+
+
+// Write a function evenCaps(sentence) that takes in a sentence as an
+// argument and returns the same string with each even index being
+// capitalized. Index 0 counts as even.
+//
+// Examples:
+//
+// => "ToM GoT A SmAlL PiEcE Of pIe"
+// evenCaps("the book is in front of the table")
+// => "ThE BoOk iS In fRoNt oF ThE TaBlE"
+
+// function evenCaps(sentence) {
+//     newSen = " "
+//     for (let i = 0; i <= sentence.length -1; i++) {
+//         let inSen = sentence[i];
+//         let capSen = inSen.toUpperCase();
+//         if (i % 2 === 0) { newSen += capSen
+//         } else {newSen += inSen}
+//     }
+//     return newSen
+// }
+
+// console.log(evenCaps("Tom got a small piece of pie"))//
+
+
+
+// / Write a function `reverseStr(str)` that takes in a string as a parameter and
+// returns the string but with the characters in reverse.
+//
+// Examples:
+//
+// reverseStr('funplace'); 
+// reverseStr('App Academy'); //=> 'ymedacA ppA'
+
+// function reverseStr(str) { 
+//     string = ' '
+//     for (let i = str.length - 1; i >= 0; i--){
+
+//         str1 = str[i] 
+//     string += str1
+// }
+// return string
+// }
+
+
+// console.log(reverseStr('funplace'))
+
+
+// Write a function `everyOtherWord(sentence)` that takes in a sentence and returns
+// an array containing every other word in that sentence.
+//
+// Examples:
+//
+// everyOtherWord('the weather is wonderful'); // => [ 'the', 'is' ]
+
+// function everyOtherWord(sentence) {
+//     let arr = []
+//     let newSen = sentence.split(' ')
+
+//     for (i = 0; i < newSen.length; i +=2) {
+//         senIn = newSen[i]; {
+//         arr.push(senIn)
+//         }
+//     }
+//     return arr
+// }
+
+// console.log(everyOtherWord('the weather is wonderful'))
+
+// Write a function `isInside(array, ele)` that returns true if `ele` is an element
+// inside of the `array`, false otherwise.
+//
+// HINT: use indexOf
+//
+// isInside(['chase', 'phi', 'eliot'], 'eliot'); // => true
+
+
+// function isInside(array,ele) {
+//    return array.indexOf(ele) > -1 
+// }
+
+// console.log(isInside(['chase', 'phi', 'eliot'], 'eliot'))
+
+// Write a function `luckySevens(max)` that returns an array of all numbers up
+// to max (inclusive) that are divisible by 7.
+//
+// Examples:
+//
+
+// luckySevens(42); // => [ 7, 14, 21, 28, 35, 42 ]
+
+// function luckySeven(max) {
+//     let arr = []
+//     for (let i = 0; i <= max; i++) {
+//         if (i % 7 === 0)
+//         arr.push(i)
+//     }
+//          return arr
+// }
+// console.log(luckySeven(42))
+
+
+// reverseStr('bootcamp'); //=> 'pmactoob'
+// reverseStr('App Academy'); //=> 'ymedacA ppA'
+
+// function reverseStr(str) {
+//     let string = ' '
+//     for (let i = str.length - 1; i >= 0; i--){
+//         str1 = str[i]
+//         string += str1
+
+//         }
+//         return string
+//     }
+
+//     console.log(reverseStr('kcidymkcus'))
+
+
+    // Write a function `copyMachine(element, num)` that takes in an element and a number
+// it should return an array of length `num` that is filled with `element`.
+//
+// Examples:
+//
+// copyMachine('candy', 0); // => []
+// copyMachine('candy', 2); // => [ 'candy', 'candy' ]
+// copyMachine('bread', 4); // => [ 'bread', 'bread', 'bread', 'bread' ]
+
+
+function copyMachine(ele, num) {
+   let arr = []
+   for(let i = 0; i < num; i++){
+   arr.push(ele)
+   }
+   return arr
 }
-    return arr
-}
 
-
-console.log(arraySubstring(["hello", "history", "helix", "hellos"],"hel"))
+console.log(copyMachine('stfu', 7))
