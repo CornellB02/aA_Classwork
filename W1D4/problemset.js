@@ -3,22 +3,22 @@
 //
 // Example:
 //
-// capWords(['hello', 'boOtCaMp', 'PREP!']); // => ['HELLO', 'BOOTCAMP', 'PREP!']
+capWords(['hello', 'boOtCaMp', 'PREP!']); // => ['HELLO', 'BOOTCAMP', 'PREP!']
 
-// function capWords(words) {
-//     let temp = [];
-//     let word = words['i'];
-//     let upperWord = words.upperCase();
+function capWords(words) {
+    let temp = [];
+    let word = words['i'];
+    let upperWord = words.upperCase();
 //     let lowerWord = string.lowerCase();
-//     for (i = 0; i < words.length; i++) {
-//        temp.push(words[i].toUpperCase());
-//     } 
+    for (i = 0; i < word.length; i++) {
+       temp.push(words[i].toUpperCase());
+    } 
 //     let answer = words.forEach(word => {
 //     word.toUpperCase();    
 //     }); 
 //     return temp
-//     return upperWord+','+upperWord+','+words
-// }
+    return upperWord+','+upperWord+','+words
+}
 
 // function capWords(words) { /// 
 //   let newWords = [];/// declare  newWords its own empthy array 
@@ -152,16 +152,42 @@
 // maxValue([]); // => null
 
 
-function maxValue(array) {
-    let max = 0
-    for (let i = 0; i < array.length; i++){
-        let num = array[i]
-        if (num > max || max === null){
-            max = num;
-        }
-    }
-    return max
+// function maxValue(array) {
+//     let max = 0
+//     for (let i = 0; i < array.length; i++){
+//         let num = array[i]
+//         if (num > max) {
+//             max = num;
+//         }
+//     }
+//     return max
     
-}
+// }
 
-console.log(maxValue([-4, -10, 0.43])); // => 0.43
+// console.log(maxValue([-4, 10, 0.43])); // => 0.43
+
+
+// Write a function `myIndexOf(array, target)` that takes in an array of
+// numbers and a target number as arguments. It should return the index value
+// of the target if it is present in the array or -1 if it is not present.
+//
+// CONSTRAINT: Do not use the indexOf method.
+//
+// Examples:
+//
+// myIndexOf([1,2,3,4],4) => 3
+// myIndexOf([5,6,7,8],2) => -1
+
+// function maxValue(array) {
+//     max = 0
+//     for (let i = 0; i < array.length; i ++){
+//      let num = array[i] 
+//      if (num > max) {
+//          max = num
+//          }
+//      }
+//  return max
+// }
+
+// console.log(maxValue([-4, 10, 0.43])); // => 0.43
+

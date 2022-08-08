@@ -37,14 +37,14 @@
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/
 // module.exports = tripler;
 
-function printArray(arr) {
-  for (i = 0; i < arr.length; i += 1) {
-    console.log(arr[i]);
-  }
-}
+// function printArray(arr) {
+//   for (i = 0; i < arr.length; i += 1) {
+//     console.log(arr[i]);
+//   }
+// }
 
 
-people = ["sable" , "cj" , "paris"]
+// people = ["sable" , "cj" , "paris"]
 
-printArray(people)
+// printArray(people)
 
