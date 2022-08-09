@@ -285,12 +285,14 @@
 // copyMachine('bread', 4); // => [ 'bread', 'bread', 'bread', 'bread' ]
 
 
-function copyMachine(ele, num) {
-   let arr = []
-   for(let i = 0; i < num; i++){
-   arr.push(ele)
-   }
-   return arr
-}
+// function copyMachine(ele, num) {
+//    let arr = []
+//    for(let i = 0; i < num; i++){
+//    arr.push(ele)
+//    }
+//    return arr
+// }
 
-console.log(copyMachine('stfu', 7))
+// console.log(copyMachine('stfu', 7))
+
+

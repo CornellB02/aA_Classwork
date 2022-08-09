@@ -20,5 +20,7 @@ return arr
 
 console.log(arrayRange(0, 12, 2))
 
+
+
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/
-module.exports = arrayRange;
+// module.exports = arrayRange;
