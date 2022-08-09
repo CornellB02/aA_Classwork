@@ -14,8 +14,24 @@ diffArrayLen(a1, a3); // => true
 ***********************************************************************/
 
 function diffArrayLen(arr1, arr2) {
-
+    for(let i = 0; i < arr1.length; i++)
+    if (arr2.length > arr1.length || arr2.length < arr1.length) {
+        return true
+    } else { 
+        if (arr2.length === arr2.length)
+        return false
+    }
 }
+
+var a1 = ['a', 'b', 'c'];
+var a2 = ['w', 'x', 'y'];
+var a3 = [1, 3, 7, 4];
+
+diffArrayLen(a1, a2); // => false
+diffArrayLen(a1, a3);
+
+console.log(diffArrayLen(a1, a2))
+console.log(diffArrayLen(a1, a3))
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 module.exports = diffArrayLen;

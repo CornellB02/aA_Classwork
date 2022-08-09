@@ -13,10 +13,41 @@ abbreviate('programming is fantastic'); // => 'prgrmmng is fntstc'
 abbreviate('hello world'); // => 'hll wrld'
 abbreviate('how are you'); // => 'how are you'
 ***********************************************************************/
+function removeVowels(word){
+    let vowel = ['a', 'e', 'i', 'o', 'u']
+   let str = '';
+
+    for (let i = 0; i < word.length; i++){
+        let char = word[i]
+
+        if (vowel.indexOf(char) === -1) {
+            str += char
+        }
+    }
+        return str
+    }
+
 
 function abbreviate(sentence) {
+    let splt = sentence.split(' ')
+    let words = []
 
+    for (let i = 0; i < splt.length; i++){
+        word = splt[i]
+        
+        if (word.length > 4) {
+            let noVowel = removeVowels(word)
+            words.push(noVowel)
+             } else {
+         words.push(word)
+         }
+     }
+    return words.join(' ')
 }
+
+
+console.log(abbreviate('hello world'))
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 module.exports = abbreviate;
